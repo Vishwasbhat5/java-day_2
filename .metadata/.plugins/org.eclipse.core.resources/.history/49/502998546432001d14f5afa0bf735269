@@ -1,0 +1,22 @@
+package com.sonata.productJdbcApp;
+
+
+
+
+public class ProdApp {
+public static void main(String[] args) {
+		ProductJdbc s1 = new ProductJdbc();
+		s1.setProId(100);
+		s1.setProName("shyam");
+		s1.setProPrice(2355.55);
+		ProductImpl e1 = new ProductImpl();
+		int a = e1.save(e1);
+		System.out.println(a);
+			
+
+	}
+
+
+
+	
+	}

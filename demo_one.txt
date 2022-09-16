@@ -1,0 +1,4 @@
+"demo_one": sqp_0483c5822bde9280b5647821ee3ada0ef2de2bc8
+demo_one: sqp_7ae4ea7405d856f7ec250d03faf6d572c16b6045
+
+sonar-scanner.bat -D"sonar.projectKey=demo_one" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_7ae4ea7405d856f7ec250d03faf6d572c16b6045"

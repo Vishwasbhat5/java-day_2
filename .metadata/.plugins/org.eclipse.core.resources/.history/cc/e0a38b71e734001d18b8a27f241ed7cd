@@ -1,0 +1,10 @@
+package com.sonata.implementation;
+
+public class DefGreeting implements GreetingInterface {
+
+	@Override
+	public String sayGreeting(String name) {
+		return ("Good morning " +name);
+	}
+	
+}

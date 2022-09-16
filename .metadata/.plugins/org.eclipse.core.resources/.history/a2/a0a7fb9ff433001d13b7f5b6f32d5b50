@@ -1,0 +1,36 @@
+package Cust_Bean;
+
+import java.io.Serializable;
+
+public class Customer_Bean implements Serializable 
+{
+	 private String Name;
+	 private String Password;
+	 private String Address;
+	 private String CustomerId;
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getPassword() {
+		return Password;
+	}
+	public void setPassword(String password) {
+		Password = password;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	public int getCustomerId() {
+		return CustomerId;
+	}
+	public void setCustomerId(String customerId2) {
+		CustomerId = customerId2;
+	}
+	 
+	}

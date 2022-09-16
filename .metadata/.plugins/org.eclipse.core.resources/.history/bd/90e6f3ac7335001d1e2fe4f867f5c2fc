@@ -1,0 +1,5 @@
+package com.sonata.Interface;
+
+public interface ValidateInterface {
+
+}

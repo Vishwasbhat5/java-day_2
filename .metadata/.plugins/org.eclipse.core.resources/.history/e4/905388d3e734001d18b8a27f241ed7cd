@@ -1,0 +1,5 @@
+package com.sonata.example.demo;
+
+public interface GreetingInterface {
+	public String sayGreeting(String name);
+}

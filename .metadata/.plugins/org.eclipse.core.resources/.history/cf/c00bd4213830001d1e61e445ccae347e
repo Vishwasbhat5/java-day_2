@@ -1,0 +1,19 @@
+package com.sonata.DAO_Employee;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.sonata.EModel.Employee;
+
+public class Test_DAO_Emp {
+	Employee e1 = new Employee();
+	Employee e2 = new Employee();
+	
+
+	@Test
+	public void DAO_test() {
+		e1.setempID
+	}
+
+}

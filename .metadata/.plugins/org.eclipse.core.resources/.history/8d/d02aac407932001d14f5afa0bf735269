@@ -1,0 +1,8 @@
+package com.sonata.DAOImpl;
+
+public interface EmpIntf
+{
+	public int save(Object object);
+	public List<Employee> getData();
+	
+}

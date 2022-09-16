@@ -1,0 +1,5 @@
+package com.sonata.Interface;
+
+public interface OrderInterface {
+public boolean order(String Username,String Password);
+}

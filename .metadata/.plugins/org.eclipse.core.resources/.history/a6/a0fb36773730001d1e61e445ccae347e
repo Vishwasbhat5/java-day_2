@@ -1,0 +1,14 @@
+package com.sonata.DAO_Employee;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class Test_DAO_Emp {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

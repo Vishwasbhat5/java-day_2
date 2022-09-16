@@ -1,0 +1,38 @@
+package com.sonata.DAO_Employee;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.sonata.DAOImpl.EmployeeImpl;
+import com.sonata.EModel.Employee;
+
+public class Test_DAO_Emp 
+{
+	Employee e1 = new Employee();
+	EmployeeImpl e2 = new EmployeeImpl();
+	
+
+	@Test
+	public void DAO_test_positive() 
+	{
+		e1.setEmpID(190);
+		e1.setEmpSal(2345.98);
+		e1.setEmpName("sonata");
+		 int row = e2.save(e1);
+		assertEquals(0,row);
+	
+	}
+	
+	@Test
+	public void DAO_test_negative() 
+	{
+		e1.setEmpID(120);
+		e1.setEmpSal(2345.98);
+		e1.setEmpName("sonata");
+		int row = e2.save(e1);
+		assertEquals(0,row);
+	
+	}
+
+}

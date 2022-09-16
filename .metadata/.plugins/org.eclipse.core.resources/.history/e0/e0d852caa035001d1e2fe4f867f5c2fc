@@ -1,0 +1,21 @@
+package com.sonata.implementation;
+
+import com.sonata.example.demo.Addition;
+import com.sonata.example.demo.CalculatorSpring;
+
+public class DefCalculator implements CalculatorSpring {
+	Addition add;
+	@Override
+	public int callAdd(int n1, int n2) {
+		return add.add(n1, n2);
+	}
+	
+	public void setAdd(Addition add) {
+		this.add = add;
+	}
+	
+	
+
+}
+
+

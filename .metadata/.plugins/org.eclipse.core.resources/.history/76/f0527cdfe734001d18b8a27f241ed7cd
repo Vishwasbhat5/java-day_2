@@ -1,0 +1,12 @@
+package com.sonata.implementation;
+
+import com.sonata.example.demo.GreetingInterface;
+
+public class MyGreeting implements GreetingInterface {
+
+	@Override
+	public String sayGreeting(String name) {
+		return "Hello, how are you" +name;
+	}
+
+}

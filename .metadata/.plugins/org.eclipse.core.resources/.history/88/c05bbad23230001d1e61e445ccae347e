@@ -1,0 +1,36 @@
+package com.sonata.DAOImpl;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.sonata.model.Employee;
+
+public class EmployeeImpl implements EmpIntf {
+DB_Connection db =new DB_Connection();
+int row =0;
+public int save(Object object) 
+{
+	Employee p1 =(Employee) object;
+	try 
+	{
+		PreparedStatement s1 =db.getConnection().prepareStatement("insert into employee value");
+		s1.setInt(1, p1.getEmpID());
+		s1.setNString(2, p1.getEmpName());
+		s1.setDouble(2, p1.getEmpSal());
+		row = s1.executeUpdate();
+		db.closeConnection();
+	}
+	catch(SQLException e)
+	{
+		
+		e.printStackTrace();
+	}
+	return row;
+}
+
+
+
+
+public List<Employee>getData()
+}

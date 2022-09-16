@@ -1,0 +1,17 @@
+package com.sonata.example.demo;
+
+public class DemoApp {
+		public static void main(String[] args) {
+
+			ApplicationContext ctx = SpringApplication.run(DemoApplication.class, args);
+			GreetingInterface  greeting = new DefaultGreeting();
+			BeanFactory factory = new ClassPathXmlApplicationContext("beans.xml");
+			CallGreetingInterface  greeting = (CallGreetingInterface) ctx.getBean("abc");
+			System.out.println(greeting.callGreeting("Ganesh"));
+			
+			BeanFactory factory = new ClassPathXmlApplicationContext("beans.xml");
+			Calculator add = (Calculator) factory.getBean("calc");
+			int r = add.callAdd(100, 200);
+			System.out.println(r);
+		}
+}

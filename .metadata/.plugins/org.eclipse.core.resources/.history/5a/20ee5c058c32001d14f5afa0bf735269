@@ -1,0 +1,56 @@
+package com.sonata.ProductImplJDBC;
+
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.sonata.EModel.Employee;
+import com.sonata.productJDBC.ProductJdbc;
+
+
+public class productImplJdbc implements ProductIntfJdbc {
+    
+    DBConnectionProd db = new DBConnectionProd();	
+    PreparedStatement s1;	int row = 0;	
+    @Override	
+    public int save(Object object) {		
+        
+        ProductJdbc p1 = (ProductJdbc) object;	
+        try {			
+        	s1 = db.getConnection().prepareStatement("insert into product values(?,?,?)");			
+            
+            s1.setInt(1, p1.getProId());		
+            s1.setString(2, p1.getProName());			
+            s1.setDouble(3, p1.getProPrice());		
+            row = s1.executeUpdate();		
+            db.closeConnection();		} 
+        catch (SQLException e) {e.printStackTrace();}	
+        
+        ResultSet rs = ps.executeQuery();
+ 	   
+ 	   while (rs.next()) {
+ 		  ProductJdbc s2 = new ProductJdbc();
+ 		 s2.setProId(rs.getInt(1));
+ 		 s2.setProName(rs.getNString(2));	
+ 		 s2.setProPrice(rs.getDouble(3));
+ 		 rs.add(s2);
+ 	   }
+ 	  
+    }catch (SQLException e1) {
+ 		// TODO Auto-generated catch block
+ 		e1.printStackTrace();
+ }
+    return stu;
+ }
+
+        
+        
+        
+        
+        finally { if (s1!=null){		
+                
+                try {	s1.close();	} 
+                
+                catch (SQLException e) {e.printStackTrace();		 } }}		
+        return row;	}}

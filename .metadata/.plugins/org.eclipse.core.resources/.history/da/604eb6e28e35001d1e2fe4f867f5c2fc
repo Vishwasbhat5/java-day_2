@@ -1,0 +1,20 @@
+package com.sonata.Implementation;
+
+
+
+public class LoginImpl implements com.sonata.Interface.LoginIntf{
+	private UserIntf valUser;
+
+	@Override
+	public boolean getValUser(String uname, String pass) {
+		if(valUser.validateUser(uname, pass)) {
+			return true;
+		} else {return false;}
+	}
+
+	public void setValUser(UserIntf valUser) {
+		this.valUser = valUser;
+	}
+	
+	
+}

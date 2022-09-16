@@ -1,0 +1,64 @@
+package com.sonata.CustomerBean;
+
+public class Member {
+	
+	private String CustomerId, Password, email, contact ,Name;
+
+	
+	public Member() {
+		super();
+	}
+
+	public Member(String CustomerId, String Password, String email, String contact,String Name) {
+		super();
+		this.CustomerId = CustomerId;
+		this.Password = Password;
+		this.contact =  contact;
+		this.email = email;
+		this.Name = Name;
+	}
+
+	public String getCustomerId() {
+		return CustomerId;
+	}
+
+	public void setCustomerId(String customerId) {
+		CustomerId = customerId;
+	}
+
+	public String getPassword() {
+		return Password;
+	}
+
+	public void setPassword(String password) {
+		Password = password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		this.Name = name;
+	}
+
+
+	
+
+}

@@ -1,0 +1,6 @@
+package com.sonata.DAOImpl;
+
+public interface EmpIntf
+{
+	public int save(Object object);
+}

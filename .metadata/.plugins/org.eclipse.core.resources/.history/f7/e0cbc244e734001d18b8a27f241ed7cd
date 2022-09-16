@@ -1,0 +1,29 @@
+package com.sonata.implementation;
+
+public class DefCallGreeting implements CallGreetingInterface {
+	
+	@Autowired
+	@Qualifier("defaultGreeting")
+	GreetingInterface greeting;
+	
+	
+	@Override
+	public String callGreeting(String name) {
+		return greeting.sayGreeting(name);
+	}
+
+	public GreetingInterface getDefaultGreeting() {
+		return greeting;
+	}
+
+	@Required
+	public void setDefaultGreeting(GreetingInterface greeting) {
+		this.greeting = greeting;
+	}
+
+	
+	
+	
+	
+
+}

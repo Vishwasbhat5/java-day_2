@@ -1,0 +1,5 @@
+package CustomerServlet;
+
+public class Customer_Bean {
+
+}

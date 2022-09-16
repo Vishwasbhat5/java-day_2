@@ -1,0 +1,5 @@
+package Emp_Bean;
+
+public class Employee_Bean implements Serializable {
+
+}

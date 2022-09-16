@@ -1,0 +1,34 @@
+package com.sonata.ProdTestJDBC;
+
+
+
+
+public class ProdTestJdbc 
+{
+	ProductJdbc p1 = new ProductJdbc();
+	productImplJdbc p2 = new productImplJdbc();
+	
+
+	@Test
+	public void DAO_test_positive() 
+	{
+		e1.setEmpID(190);
+		e1.setEmpSal(2345.98);
+		e1.setEmpName("sonata");
+		 int row = e2.save(e1);
+		assertEquals(0,row);
+	
+	}
+	
+	@Test
+	public void DAO_test_negative() 
+	{
+		e1.setEmpID(120);
+		e1.setEmpSal(2345.98);
+		e1.setEmpName("sonata");
+		int row = e2.save(e1);
+		assertEquals(0,row);
+	
+	}
+
+}

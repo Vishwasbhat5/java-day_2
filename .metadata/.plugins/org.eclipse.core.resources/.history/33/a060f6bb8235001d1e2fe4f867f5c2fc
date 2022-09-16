@@ -1,0 +1,17 @@
+package com.demo.impl;
+
+
+import com.sonata.Interface.LoginInterface;
+
+public class Login implements LoginInterface {
+ValidateImpl login;
+	@Override
+	public boolean login(String username, String password) {
+		// TODO Auto-generated method stub
+		if(login.validate(username, password)==true)
+		return true;
+		else
+		return false;
+	}
+
+}

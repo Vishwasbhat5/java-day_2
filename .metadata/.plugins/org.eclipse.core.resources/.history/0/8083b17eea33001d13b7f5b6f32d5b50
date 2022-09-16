@@ -1,0 +1,10 @@
+package Emp_Bean;
+
+import java.io.Serializable;
+
+public class Employee_Bean implements Serializable {
+	 private String Name;
+	 private String Password;
+	 private String Address;
+	 private String CustomerId;
+}

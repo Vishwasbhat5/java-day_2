@@ -1,0 +1,15 @@
+package com.spring.ex.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.ex.intf.LoginIntf;
+
+public class javaApp {
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		ApplicationContext contx = new ClassPathXmlApplicationContext("bean.xml");
+		LoginIntf li = (LoginIntf) contx.getBean("login");
+		System.out.println(li.getValUser("vishwas", "vishwas123"));
+	}
+}

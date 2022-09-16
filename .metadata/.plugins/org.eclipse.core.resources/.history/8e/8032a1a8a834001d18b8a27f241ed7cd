@@ -1,0 +1,62 @@
+package com.sonata.Servenet;
+
+
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+import com.sonata.CustomerBean.Member;
+import com.sonata.DAO.RegisterDao;
+@WebServlet("/Register")
+public class Register extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    private RegisterDao registerDao;
+
+
+
+   public void init() {
+        registerDao = new RegisterDao();
+    }
+
+
+
+   protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+
+
+       String CustomerId = request.getParameter("CustomerId");
+        String Password  = request.getParameter("Password");
+        String Email = request.getParameter("Email");
+        String Contact = request.getParameter("Contact");
+        String Name = request.getParameter("Name");
+     
+       
+
+
+
+       Member member = new Member();
+       member.setCustomerId());
+       member.Password());
+       member.getEmail());
+       member.getContact());
+       member.getName());
+
+
+
+       try {
+           RegisterDao.registerMember(member);
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+
+
+       response.sendRedirect("employeedetails.jsp");
+    }
+}

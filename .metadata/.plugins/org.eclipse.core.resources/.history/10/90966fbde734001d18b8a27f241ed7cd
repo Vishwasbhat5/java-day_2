@@ -1,0 +1,36 @@
+package com.sonata.implementation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
+
+import com.sonata.example.demo.CallGreetingInterface;
+import com.sonata.example.demo.GreetingInterface;
+
+public class DefCallGreeting implements CallGreetingInterface {
+	
+	@Autowired
+	@Qualifier("defaultGreeting")
+	GreetingInterface greeting;
+	
+	
+	@Override
+	public String callGreeting(String name) {
+		return greeting.sayGreeting(name);
+	}
+
+	public GreetingInterface getDefaultGreeting() {
+		return greeting;
+	}
+
+	@Required
+	public void setDefaultGreeting(GreetingInterface greeting) {
+		this.greeting = greeting;
+	}
+
+	
+	
+	
+	
+
+}

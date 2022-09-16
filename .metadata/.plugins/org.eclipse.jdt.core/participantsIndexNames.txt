@@ -1,0 +1,19 @@
+INDEX VERSION 1.131
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2755250291.index
+\Filter\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3908234875.index
+\CustomerRegistration\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1407208341.index
+\Registration2\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1165405108.index
+\Registration-Page-Project-master\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2649737308.index
+\LoginForm\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\93137564.index
+\Registration\src
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3731425327.index
+\Registration-Page-Project-master\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1094621787.index
+\LoginPage\src\main\java
+D:\Core_Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\833971360.index
+\demo\src\main\java
